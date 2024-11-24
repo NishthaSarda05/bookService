@@ -1,0 +1,11 @@
+Microservice Book- to manage all details related book
+Microservice Borrow- manage all details related to borrow actions
+Communitcating through axios 
+Demo: have MongoDB have 2 DBs: 
+ 1. Book DB created for Book Service 2.  Borrow DB created for Borrow Service
+Showing 1. Calling book service to view all the books from Mongo. 
+2. Calling borrow service to borrow a book and updating Book DB with available status using borrorw service. 
+3. Returning book and updating book status in BOOK DB and delete borrow details in Boorrow DB. 
+
+
+

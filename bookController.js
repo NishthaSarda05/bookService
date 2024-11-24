@@ -19,6 +19,8 @@ export const bookController = {
             const status = req.params.status;
             const bookID = req.params.bookId;
 
+            console.log("book service "+ bookID + "status" + status );
+
             await  Books.findOneAndUpdate({bookId: bookID}, { isAvailable: status }, { new: true });
             console.log("Book Service updated book DB");
             resp.status(200).json("Book Status is updated Successfully");
